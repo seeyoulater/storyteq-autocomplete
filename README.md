@@ -1,5 +1,26 @@
-# Vue 3 + TypeScript + Vite
+## Storyteq Frontend
 
-This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+### [Live demo](https://storyteq-autocomplete.vercel.app/)
 
-Learn more about the recommended Project Setup and IDE Support in the [Vue Docs TypeScript Guide](https://vuejs.org/guide/typescript/overview.html#project-setup).
+---
+
+    Stack: Vue 3 + TypeScript + Vite
+
+### How to run:
+
+1. `npm i`
+2. `npm run dev`
+
+### How to run unit tests:
+
+1. `npm run vitest`
+
+### Implementation details:
+
+* The main architecture of the application is based on the implementation of the FSD (Feature Sliced Design)
+  architecture. This is definitely an overhead for this specific application, but it’s a good starting point when
+  developing a scalable modular application.
+* In real applications, there could be millions of books, making it a poor idea to fetch the entire list. In this case,
+  the current implementation is not the best option. It would be much better to implement autocomplete logic by
+  leveraging dedicated API requests that return results for autocomplete. However, due to the requirements of the task
+  regarding filtering logic, the best options for a real application are ignored.
