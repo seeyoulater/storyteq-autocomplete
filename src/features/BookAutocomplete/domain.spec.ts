@@ -5,16 +5,16 @@ import { booksToAutocompleteOptions } from '@/features/BookAutocomplete/domain.t
 const books: Book[] = [
   {
     title: 'C Book 789',
-    author: 'S. King'
+    author: 'S. King',
   },
   {
     title: 'B Book 456',
-    author: 'John Doe'
+    author: 'John Doe',
   },
   {
     title: 'A Book 123',
-    author: 'John Doe'
-  }
+    author: 'John Doe',
+  },
 ]
 
 describe('BookAutocomplete | domain', () => {

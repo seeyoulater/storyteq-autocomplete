@@ -14,7 +14,7 @@ const cities: City[] = [
   'tempe',
   'termez',
   'aaa',
-  'bbb'
+  'bbb',
 ]
 
 describe('CityAutocomplete | domain', () => {

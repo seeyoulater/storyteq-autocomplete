@@ -33,6 +33,11 @@ export const useDictionaryStore = defineStore('dictionaryStore', () => {
   }
 
   return {
-    cities, books, isLoadingCities, isLoadingBooks, fetchCities, fetchBooks
+    cities,
+    books,
+    isLoadingCities,
+    isLoadingBooks,
+    fetchCities,
+    fetchBooks,
   }
 })

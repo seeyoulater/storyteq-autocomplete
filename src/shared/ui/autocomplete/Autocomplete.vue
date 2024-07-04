@@ -56,7 +56,7 @@
   import { SearchResult } from '@/shared/ui/autocomplete/types.ts'
 
   const props = defineProps<{
-    modelValue: string,
+    modelValue: string
     placeholder?: string
     autofocus?: boolean
     loading?: boolean
@@ -65,7 +65,7 @@
 
   const emit = defineEmits<{
     (e: 'update:modelValue', query: string): void
-    (e: 'select', value: SearchResult | null): void;
+    (e: 'select', value: SearchResult | null): void
   }>()
 
   defineSlots<{
@@ -117,17 +117,16 @@
     }
   }
 
-  watch(() => props.modelValue, (value) => {
-    if (!isDropdownOpen.value) {
-      onFocus()
-    }
+  watch(
+    () => props.modelValue,
+    () => {
+      if (!isDropdownOpen.value) {
+        onFocus()
+      }
 
-    if (value.length < 3) {
-      return
-    }
-
-    // search()
-  })
+      setHighlighted(0)
+    },
+  )
 
   const setHighlighted = (index: number) => {
     activeIndex.value = index

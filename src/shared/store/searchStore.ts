@@ -8,6 +8,6 @@ export const useSearchStore = defineStore('searchStore', () => {
 
   return {
     selectedCity,
-    selectedBook
+    selectedBook,
   }
 })

@@ -7,8 +7,8 @@ import { Book, City } from '@/shared/api/types.ts'
 vi.mock('@/shared/api', () => ({
   api: {
     getCities: vi.fn(),
-    getBooks: vi.fn()
-  }
+    getBooks: vi.fn(),
+  },
 }))
 
 describe.only('dictionaryStore', () => {
